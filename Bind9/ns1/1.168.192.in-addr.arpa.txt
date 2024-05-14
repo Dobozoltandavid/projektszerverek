@@ -1,0 +1,16 @@
+
+$ORIGIN .
+$TTL 3600       ; 1 hour
+1.168.192.in-addr.arpa  IN SOA  ns1.company.lan. hostmaster.comapnay.lan. (
+                                2024040910 ; serial
+                                28800      ; refresh (8 hours)
+                                7200       ; retry (2 hours)
+                                604800     ; expire (1 week)
+                                345600     ; minimum (4 days)
+                                )
+                        NS      ns1.company.lan.
+                        NS      ns2.company.lan.
+$ORIGIN 0.168.192.in-addr.arpa.
+2                       PTR     ns1.company.lan.
+3                       PTR     ns2.company.lan.
+5                       PTR     dhcp.company.lan.

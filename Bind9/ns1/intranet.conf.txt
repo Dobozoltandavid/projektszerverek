@@ -1,0 +1,11 @@
+zone "1.168.192.in-addr.arpa" {
+        type master;
+        file "/var/lib/bind/1.168.192.in-addr.arpa";
+        allow-update { key rndc-key; };
+};
+
+zone "company.lan" {
+        type master;
+        file "/var/lib/bind/company.lan";
+        allow-update { key rndc-key; };
+};

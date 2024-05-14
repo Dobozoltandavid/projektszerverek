@@ -1,0 +1,11 @@
+zone "1.168.192.in-addr.arpa" {
+        type slave;
+        file "1.168.192.in-addr.arpa";
+        masters { 192.168.1.2; };
+};
+
+zone "company.lan" {
+        type slave;
+        file "company.lan";
+        masters { 192.168.1.2; };
+};

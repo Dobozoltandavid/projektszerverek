@@ -1,0 +1,16 @@
+
+$ORIGIN .
+$TTL 3600       ; 1 hour
+company.lan             IN SOA  ns1.company.lan. hostmaster.comapnay.lan. (
+                                2024040912 ; serial
+                                28800      ; refresh (8 hours)
+                                7200       ; retry (2 hours)
+                                604800     ; expire (1 week)
+                                345600     ; minimum (4 days)
+                                )
+                        NS      ns1.company.lan.
+                        NS      ns2.company.lan.
+$ORIGIN company.lan.
+dhcp                    A       192.168.1.5
+ns1                     A       192.168.1.2
+ns2                     A       192.168.1.3

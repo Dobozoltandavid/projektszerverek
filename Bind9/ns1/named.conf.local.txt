@@ -1,0 +1,2 @@
+include "/etc/bind/intranet.conf";
+include "/etc/bind/rndc.key";
